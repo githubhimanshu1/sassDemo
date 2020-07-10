@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html data-theme="red">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/theme.css" />
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div id="pagewrapper">
+        <div id="header">
+            <div id="headerContentWrapper">SASS Learn</div>
+        </div>
+        <div id="contentholder">
+            <div id="headingcontent">
+                <span id="message">
+                    <h1 class="mainheading">Building SASS Themes ...</h1>
+                    <span>This is a short demo on creating a dynamic themes
+                        <br/> using SASS and CSS Variables</span>
+                    <br/>
+                    <span>
+                        <br/>
+                        <h5 class="mainheading">(Click on button to switch color themes)</h5>
+                    </span>
+                    <br/>
+                </span>
+                <button class="sitebtn red" onClick="switchTheme('red')">LIGHT THEME</button>
+                <button class="sitebtn blue" onClick="switchTheme('blue')">BLUE THEME</button>
+            </div>
+            <div id="imgholder">
+                <img src="assets/logo.png" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

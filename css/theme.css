@@ -1,0 +1,70 @@
+:root {
+  --primary-header-color:#585858;
+  --primary-content-color:#d06b57;
+  --primary-button-color:#ecd6c7;
+  --secondary-button-color:#a39391;
+  --body-margin:0px;
+  --font-family:Roboto;
+  --max-width:1440px;
+  --content-width:80vw;
+  --header-line-height:60px;
+  --primary-font-color:#fff;
+  --red-shade:#d06b57;
+  --blue-shade:#809cc5; }
+
+:root[data-theme="blue"] {
+  --primary-header-color:#0d2c6e;
+  --primary-content-color:#809cc5;
+  --primary-button-color:#fff;
+  --secondary-button-color:#a39391;
+  --primary-font-color:#fff; }
+
+body {
+  margin: 0px;
+  background-color: var(--primary-button-color);
+  font-family: var(--font-family); }
+
+#pagewrapper {
+  display: inline-grid;
+  grid-template-rows: 60px auto;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  width: 100vw; }
+  #pagewrapper #header {
+    background-color: var(--primary-header-color);
+    border-bottom: 1px solid #000;
+    color: var(--primary-font-color);
+    font-weight: bold;
+    z-index: 5; }
+    #pagewrapper #header #headerContentWrapper {
+      max-width: var(--max-width);
+      width: var(--content-width);
+      margin: 0px auto;
+      line-height: var(--header-line-height); }
+  #pagewrapper #contentholder {
+    max-width: var(--max-width);
+    width: var(--content-width);
+    margin: 0px auto;
+    background-color: var(--primary-button-color);
+    align-content: center;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    color: var(--primary-header-color); }
+    #pagewrapper #contentholder #headingcontent .mainheading {
+      margin: 2px; }
+    #pagewrapper #contentholder #headingcontent .sitebtn {
+      background-color: var(--primary-content-color);
+      padding: 5px 20px;
+      border-radius: 5px;
+      color: #fff;
+      font-weight: bold;
+      outline: none;
+      border-width: 0px;
+      height: 40px; }
+      #pagewrapper #contentholder #headingcontent .sitebtn:hover {
+        cursor: pointer;
+        background-color: #a0a0a0; }
+    #pagewrapper #contentholder #headingcontent .red {
+      background-color: var(--red-shade); }
+    #pagewrapper #contentholder #headingcontent .blue {
+      background-color: var(--blue-shade); }
